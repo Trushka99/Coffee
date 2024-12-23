@@ -1,0 +1,37 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  img: String,
+  active: Boolean,
+  onClick: Function,
+  id: Number
+})
+</script>
+<template>
+  <div v-on:click="props.onClick" :class="{ active: props.active }" class="grid__item">
+    <img class="grid__item-img" :id="props.id" :src="props.img" />
+  </div>
+</template>
+<style scoped>
+.grid__item {
+  width: 92px;
+  height: 92px;
+  border-radius: 10px;
+  background-color: rgba(141, 147, 83, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.grid__item:hover {
+  opacity: 0.5;
+}
+.grid__item-img {
+  width: 64px;
+  height: 84px;
+}
+.active {
+  background-color: rgba(237, 229, 216, 1);
+}
+</style>
