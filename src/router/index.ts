@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import OrderPage from '@/pages/OrderPage.vue'
 import HomePage from '@/pages/HomePage.vue'
 import MerchPage from '@/pages/MerchPage.vue'
 import MenuPage from '@/pages/MenuPage.vue'
@@ -21,6 +22,10 @@ const router = createRouter({
     {
       path: '/basket',
       component: BasketPage
+    },
+    {
+      path: '/order',
+      component: OrderPage
     }
   ],
   history: createWebHistory()

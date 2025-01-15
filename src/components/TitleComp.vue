@@ -8,6 +8,10 @@
 .background {
   background-color: rgba(237, 229, 216, 1);
   text-align: center;
-  height: 391px;
+  height: 20%;
+}
+.title {
+  object-fit: contain;
+  width: 100%;
 }
 </style>

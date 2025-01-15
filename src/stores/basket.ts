@@ -21,6 +21,9 @@ export const useBasket = defineStore('basket', {
     }
   },
   actions: {
+    deleteBasket() {
+      return this.basket.splice(0, this.basket.length)
+    },
     addToBasket(data: PropsInterface) {
       this.basket.push(data)
     },

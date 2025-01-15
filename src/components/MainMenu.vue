@@ -138,10 +138,11 @@ watchEffect(() => {
   margin: 0 auto;
   margin-top: 56px;
 }
+
 .menu__kapibard {
-  width: 664px;
-  height: 350px;
+  width: 50%;
   border-radius: 40px 0 0 40px;
+  object-fit: cover;
 }
 .menu__big-text {
   font-family: Lato;
@@ -177,5 +178,18 @@ watchEffect(() => {
   width: 90%;
   justify-content: end;
   gap: 32px;
+}
+@media (max-width: 1280px) {
+  .menu__reserve {
+    width: 80%;
+  }
+  .menu__big-text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .menu__small-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 </style>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import MerchIcon from '@/components/MerchIcon.vue'
 import SizeIcon from '@/components/SizeIcon.vue'
 import { ref } from 'vue'

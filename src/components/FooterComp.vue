@@ -85,4 +85,9 @@ function scrollTo(view: any) {
   background-color: rgba(240, 147, 82, 1);
   cursor: pointer;
 }
+@media (max-width: 1280px) {
+  .footer {
+    gap: 25%;
+  }
+}
 </style>

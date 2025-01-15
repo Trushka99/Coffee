@@ -2,6 +2,7 @@
 import { useBasket } from '@/stores/basket'
 import BasketItem from '@/components/BasketItem.vue'
 import { watchEffect, ref } from 'vue'
+import { RouterLink } from 'vue-router'
 const basket = useBasket()
 const data = ref()
 watchEffect(() => (data.value = basket.getBasket))
@@ -22,7 +23,9 @@ watchEffect(() => (data.value = basket.getBasket))
         :quantity="item.quantity"
       />
     </div>
-    <button class="basket__button">Оформить Заказ</button>
+    <RouterLink to="/order">
+      <button @click="basket.deleteBasket" class="basket__button">Оформить Заказ</button>
+    </RouterLink>
   </div>
 </template>
 <style scoped>

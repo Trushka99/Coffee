@@ -79,7 +79,19 @@ import { RouterLink } from 'vue-router'
 }
 .mission-button__cont {
   align-self: self-end;
-  max-width: 432px;
+  max-width: 30%;
   margin-left: 32px;
+}
+@media (max-width: 1280px) {
+  .mission__cont {
+    flex-direction: column;
+  }
+  .mission-button__cont {
+    align-self: flex-start;
+    text-align: center;
+    max-width: 80%;
+  }
+  .mission__text {
+  }
 }
 </style>
