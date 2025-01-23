@@ -43,7 +43,7 @@ const addToBasket = (data: PropsInterface) => {
 
 <template>
   <article class="menu__item">
-    <div>
+    <div class="menu__img-cont">
       <img class="menu__img" :src="props.img" />
     </div>
     <div class="menu__info">
@@ -94,6 +94,12 @@ const addToBasket = (data: PropsInterface) => {
   </article>
 </template>
 <style scoped>
+.menu__img-cont {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 .modal {
   position: fixed;
   z-index: 2;
@@ -156,6 +162,8 @@ const addToBasket = (data: PropsInterface) => {
 }
 .menu__img {
   margin: -150px 0 50px 0;
+  object-fit: cover;
+  max-width: 100%;
 }
 .menu__absolute {
   position: absolute;

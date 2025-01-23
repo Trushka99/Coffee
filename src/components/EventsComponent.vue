@@ -101,4 +101,16 @@ const data = [
   font-weight: 400;
   line-height: 29px;
 }
+@media (max-width: 1200px) {
+  .events__cont {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .events__grid {
+    grid-template-columns: 316px;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+}
 </style>

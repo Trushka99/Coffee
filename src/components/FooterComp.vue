@@ -90,4 +90,14 @@ function scrollTo(view: any) {
     gap: 25%;
   }
 }
+@media (max-width: 1024px) {
+  .footer {
+    gap: 6%;
+  }
+}
+@media (max-width: 768px) {
+  .footer__contacts {
+    flex-direction: column;
+  }
+}
 </style>

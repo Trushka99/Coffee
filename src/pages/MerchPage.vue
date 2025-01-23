@@ -72,7 +72,7 @@ const change = (e) => {
 <template>
   <div class="merch-page">
     <img class="merch-page__image" :src="found.img" />
-    <div>
+    <div class="merch-page__right">
       <h1 class="merch-page-title">{{ found.name }}</h1>
       <h2 class="merch-page-large-text">{{ found.price }}</h2>
       <div class="merch-sizes" v-if="found.sizes">
@@ -112,7 +112,7 @@ const change = (e) => {
   display: flex;
   padding: 64px 0 64px 0;
   justify-content: center;
-  gap: 139px;
+  gap: 10%;
 }
 .merch-page-title {
   font-family: Lato;
@@ -132,8 +132,11 @@ const change = (e) => {
 }
 .merch-sizes {
   display: flex;
-  gap: 24px;
+  gap: 3%;
   margin-bottom: 32px;
+}
+.merch-page__right {
+  width: 40%;
 }
 .merch-page-small-text {
   font-family: Lato;
@@ -153,9 +156,10 @@ const change = (e) => {
 }
 .merch-page__grid {
   display: grid;
-  grid-template-rows: repeat(2, 92px);
-  grid-template-columns: repeat(4, 92px);
+  grid-template-rows: repeat(2, 40%);
+  grid-template-columns: repeat(4, 20%);
   gap: 24px;
+  width: 60%;
 }
 .merch-page__grid-item {
   width: 92px;
@@ -168,7 +172,25 @@ const change = (e) => {
   align-items: center;
 }
 .merch-page__image {
-  width: 553px;
-  height: 745px;
+  max-width: 500px;
+  max-height: 745px;
+}
+@media (max-width: 1280px) {
+  .merch-page__grid {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .merch-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .merch-page__right {
+    margin-top: 50px;
+    width: 70%;
+  }
+  .merch-page-medium-text {
+    margin-bottom: 60px;
+  }
 }
 </style>

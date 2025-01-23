@@ -143,6 +143,7 @@ watchEffect(() => {
   width: 50%;
   border-radius: 40px 0 0 40px;
   object-fit: cover;
+  display: visible;
 }
 .menu__big-text {
   font-family: Lato;
@@ -171,7 +172,7 @@ watchEffect(() => {
 .menu__reserve-contacts {
   display: flex;
   width: 90%;
-  margin-top: 91px;
+  margin-top: 15%;
 }
 .menu__reserve-icons {
   display: flex;
@@ -190,6 +191,31 @@ watchEffect(() => {
   .menu__small-text {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .menu__grid {
+    grid-template-columns: 80%;
+    column-gap: 20px;
+    width: 75%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .menu__container {
+    flex-direction: column;
+  }
+  .menu__choise-item {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .menu__choise {
+    width: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .menu__kapibard {
+    display: none;
   }
 }
 </style>

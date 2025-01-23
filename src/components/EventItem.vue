@@ -30,7 +30,7 @@ const props = defineProps({
 <style scoped>
 .event__item {
   position: relative;
-  width: 663px;
+  max-width: 663px;
   height: 596px;
   gap: 0px;
   border-radius: 40px;
@@ -42,7 +42,7 @@ const props = defineProps({
 .event__item_small {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 282px;
   gap: 0px;
   border-radius: 40px;
   display: flex;
@@ -67,6 +67,7 @@ const props = defineProps({
   width: 100%;
   height: 100%;
   border-radius: 40px;
+  object-fit: cover;
 }
 .event__description {
   font-family: Lato;

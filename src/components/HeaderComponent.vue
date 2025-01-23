@@ -14,8 +14,8 @@ watchEffect(() => (data.value = basket.getBasket))
       <RouterLink class="header__link" to="/"
         ><img alt="Site logo" class="header__logo" src="../images/Logo-header.png"
       /></RouterLink>
-      <nav>
-        <ul class="header__nav">
+      <nav class="header__nav">
+        <ul class="header__list">
           <RouterLink class="header__link" to="/menu"
             ><li class="header__text">Меню</li></RouterLink
           >
@@ -34,7 +34,6 @@ watchEffect(() => (data.value = basket.getBasket))
           <p class="basket__text">{{ data.length }}</p>
         </RouterLink>
       </div>
-      <button class="header__button header__text">Контакты</button>
     </div>
   </header>
 </template>
@@ -51,16 +50,11 @@ watchEffect(() => (data.value = basket.getBasket))
 }
 .header {
   background-color: rgba(237, 229, 216, 1);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 8px 40px 8px 40px;
   margin: 0 auto;
 }
-.header__right {
-  display: flex;
-  gap: 20px;
-}
+
 .basket__image {
   width: 40px;
   height: 40px;
@@ -76,7 +70,6 @@ watchEffect(() => (data.value = basket.getBasket))
 }
 .header__right {
   display: flex;
-  margin-right: 64px;
   align-items: center;
 }
 .header__logo {
@@ -89,27 +82,19 @@ watchEffect(() => (data.value = basket.getBasket))
 }
 
 .header__nav {
+  width: 100%;
+}
+.header__list {
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 421px;
-  list-style: none;
+  width: 35%;
 }
 .header__button-container {
   display: flex;
   gap: 32px;
 }
-.header__button {
-  background-color: rgba(221, 159, 114, 1);
-  width: 200px;
-  height: 52px;
-  padding: 14px 55px 14px 54px;
-  border-radius: 20px;
-  border: none;
-}
-.header__button:hover {
-  background-color: rgba(240, 147, 82, 1);
-  cursor: pointer;
-}
+
 .header__text {
   font-family: Lato;
   font-size: 20px;
@@ -127,5 +112,29 @@ watchEffect(() => (data.value = basket.getBasket))
 }
 .header__link:visited {
   color: rgba(30, 26, 26, 1);
+}
+@media (max-width: 1280px) {
+  .header__list {
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .header__list {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .header__list {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .header__list {
+    flex-direction: column;
+    justify-self: end;
+  }
+  .header__text {
+    text-align: right;
+  }
 }
 </style>

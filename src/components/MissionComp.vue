@@ -91,7 +91,19 @@ import { RouterLink } from 'vue-router'
     text-align: center;
     max-width: 80%;
   }
-  .mission__text {
+}
+@media (max-width: 1024px) {
+  .mission__title {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .mission__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .mission__button {
+    width: 100%;
   }
 }
 </style>
