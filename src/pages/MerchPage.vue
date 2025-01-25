@@ -2,7 +2,15 @@
 import MerchIcon from '@/components/MerchIcon.vue'
 import SizeIcon from '@/components/SizeIcon.vue'
 import { ref } from 'vue'
-const data = [
+interface DataInterface {
+  id: number
+  img: string
+  name: string
+  sizes?: string[]
+  price: string
+  active: boolean
+}
+const data: DataInterface[] = [
   {
     id: 1,
     img: '/src/images/Черная_футболка_с_лого.png',
@@ -24,7 +32,8 @@ const data = [
     img: '/src/images/Белая_футболка_с_лого.png',
     name: 'Белая футболка с лого',
     sizes: ['M', 'S', 'L', 'XL', '2XL'],
-    price: '1 390 ₽'
+    price: '1 390 ₽',
+    active: false
   },
   {
     id: 4,
@@ -49,24 +58,30 @@ const data = [
     active: false
   }
 ]
-let found = ref(data.find((element) => (element.id = 1)))
+let found = ref(data[1])
 const changeDirectionPrev = () => {
   let newFound = data.find((element) => element.id === found.value.id - 1)
   found.value.active = false
-  newFound.active = true
-  found.value = newFound
+  if (newFound) {
+    newFound.active = true
+    found.value = newFound
+  }
 }
 const changeDirectionNext = () => {
   let newFound = data.find((element) => element.id === found.value.id + 1)
   found.value.active = false
-  newFound.active = true
-  found.value = newFound
+  if (newFound) {
+    newFound.active = true
+    found.value = newFound
+  }
 }
-const change = (e) => {
+const change = (e: any) => {
   let newFound = data.find((element) => element.id === Number(e.target.id))
   found.value.active = false
-  newFound.active = true
-  found.value = newFound
+  if (newFound) {
+    newFound.active = true
+    found.value = newFound
+  }
 }
 </script>
 <template>
