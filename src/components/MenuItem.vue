@@ -193,6 +193,7 @@ const addToBasket = (data: PropsInterface) => {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
+  color: rgb(44, 62, 80);
 }
 .menu__text_small {
   font-size: 20px;

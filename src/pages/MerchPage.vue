@@ -58,7 +58,7 @@ const data: DataInterface[] = [
     active: false
   }
 ]
-let found = ref(data[1])
+let found = ref(data[0])
 const changeDirectionPrev = () => {
   let newFound = data.find((element) => element.id === found.value.id - 1)
   found.value.active = false
@@ -189,6 +189,7 @@ const change = (e: any) => {
 .merch-page__image {
   max-width: 500px;
   max-height: 745px;
+  width: 100%;
 }
 @media (max-width: 1280px) {
   .merch-page__grid {
@@ -206,6 +207,15 @@ const change = (e: any) => {
   }
   .merch-page-medium-text {
     margin-bottom: 60px;
+  }
+  .merch-page__grid {
+    grid-template-rows: repeat(3, 50%);
+    grid-template-columns: repeat(3, 30%);
+    gap: 24px;
+    width: 100%;
+  }
+  .merch__arrow {
+    display: none;
   }
 }
 </style>

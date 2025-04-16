@@ -17,8 +17,6 @@ const props = defineProps<PropsInterface>()
 </template>
 <style scoped>
 .grid__item {
-  width: 92px;
-  height: 92px;
   border-radius: 10px;
   background-color: rgba(141, 147, 83, 1);
   display: flex;
@@ -30,8 +28,8 @@ const props = defineProps<PropsInterface>()
   opacity: 0.5;
 }
 .grid__item-img {
-  width: 64px;
-  height: 84px;
+  width: 100%;
+  object-fit: contain;
 }
 .active {
   background-color: rgba(237, 229, 216, 1);

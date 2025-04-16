@@ -112,5 +112,9 @@ const data = [
     grid-template-rows: auto;
     justify-content: center;
   }
+  .events__title {
+    font-size: 44px;
+    line-height: 57px;
+  }
 }
 </style>
