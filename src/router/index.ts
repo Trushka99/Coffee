@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import OrderPage from '@/pages/OrderPage.vue'
 import HomePage from '@/pages/HomePage.vue'
 import MerchPage from '@/pages/MerchPage.vue'
@@ -28,7 +28,7 @@ const router = createRouter({
       component: OrderPage
     }
   ],
-  history: createWebHistory()
+  history: createWebHashHistory()
 })
 
 export default router
