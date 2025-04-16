@@ -51,6 +51,7 @@ import { RouterLink } from 'vue-router'
   text-align: start;
   height: max-content;
   margin-right: 72px;
+  color: rgb(44, 62, 80);
 }
 .mission__color {
   color: rgba(221, 159, 114, 1);
@@ -61,6 +62,7 @@ import { RouterLink } from 'vue-router'
   font-weight: 400;
   line-height: 115px;
   width: 780px;
+  color: rgb(44, 62, 80);
 }
 .mission__button {
   width: 432px;
