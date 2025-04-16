@@ -2,35 +2,35 @@
 import EventItem from './EventItem.vue'
 const data = [
   {
-    image: '/src/images/cards.jpeg',
+    image: '/Coffee/images/cards.jpeg',
     name: 'Каждую среду играем в настольные игры',
     date: 'Начало — 19:00',
     child: true
   },
   {
     id: 1,
-    image: '/src/images/music.jpeg',
+    image: '/Coffee/images/music.jpeg',
     name: 'Вечер с живой музыкой',
     date: '4 апреля — 18:00',
     child: false
   },
   {
     id: 2,
-    image: '/src/images/caffe.jpeg',
+    image: '/Coffee/images/caffe.jpeg',
     name: 'Дегустационный вечер',
     date: '8 апреля 14:00—18:00',
     child: false
   },
   {
     id: 3,
-    image: '/src/images/movie.jpeg',
+    image: '/Coffee/images/movie.jpeg',
     name: 'Киновечер',
     date: '18 апреля — 18:00',
     child: false
   },
   {
     id: 4,
-    image: '/src/images/КАПИБАРА.jpeg',
+    image: '/Coffee/images/КАПИБАРА.jpeg',
     name: 'Мастер-класс: Рисуем капибар',
     date: '22 апреля — 15:00',
     child: true

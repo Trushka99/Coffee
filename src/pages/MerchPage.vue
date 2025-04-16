@@ -13,7 +13,7 @@ interface DataInterface {
 const data: DataInterface[] = [
   {
     id: 1,
-    img: '/src/images/Черная_футболка_с_лого.png',
+    img: '/Coffee/images/Черная_футболка_с_лого.png',
     name: 'Черная футболка с лого',
     sizes: ['M', 'S', 'L', 'XL', '2XL'],
     price: '1 390 ₽',
@@ -21,7 +21,7 @@ const data: DataInterface[] = [
   },
   {
     id: 2,
-    img: '/src/images/Белая_футболка.png',
+    img: '/Coffee/images/Белая_футболка.png',
     name: 'Белая футболка с капи',
     sizes: ['M', 'S', 'L', 'XL', '2XL'],
     price: '1 490 ₽',
@@ -29,7 +29,7 @@ const data: DataInterface[] = [
   },
   {
     id: 3,
-    img: '/src/images/Белая_футболка_с_лого.png',
+    img: '/Coffee/images/Белая_футболка_с_лого.png',
     name: 'Белая футболка с лого',
     sizes: ['M', 'S', 'L', 'XL', '2XL'],
     price: '1 390 ₽',
@@ -37,7 +37,7 @@ const data: DataInterface[] = [
   },
   {
     id: 4,
-    img: '/src/images/Черная_футболка.png',
+    img: '/Coffee/images/Черная_футболка.png',
     name: 'Черная футболка с капи',
     sizes: ['M', 'S', 'L', 'XL', '2XL'],
     price: '1 490 ₽',
@@ -45,14 +45,14 @@ const data: DataInterface[] = [
   },
   {
     id: 5,
-    img: '/src/images/Шопер_белый.png',
+    img: '/Coffee/images/Шопер_белый.png',
     name: 'Белый шопер с капи',
     price: '1 990 ₽',
     active: false
   },
   {
     id: 6,
-    img: '/src/images/Шопер_черный.png',
+    img: '/Coffee/images/Шопер_черный.png',
     name: 'Черный шопер с капи',
     price: '1 990 ₽',
     active: false
