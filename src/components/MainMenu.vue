@@ -49,7 +49,7 @@ watchEffect(() => {
       ></MenuItem>
     </div>
     <div class="menu__reserve">
-      <img class="menu__kapibard" src="../images/kapibara.png" />
+      <img class="menu__kapibard" src="/images/kapibara.png" />
       <div class="menu__reserve-text">
         <h2 class="menu__big-text">
           Вы всегда можете забронировать столик и сделать заказ заранее по телефону, в нашем
@@ -65,7 +65,7 @@ watchEffect(() => {
             <a class="menu__link" href="tel:+7 999 553-54-94">+7 999 553-54-94</a>
           </p>
           <div class="menu__reserve-icons">
-            <img src="../images/TG_icon.svg" /><img src="../images/VK.svg" />
+            <img src="/images/TG_icon.svg" /><img src="/images/VK.svg" />
           </div>
         </div>
       </div>

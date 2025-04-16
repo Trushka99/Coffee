@@ -112,10 +112,10 @@ const change = (e: any) => {
           :id="item.id"
         ></MerchIcon>
         <div v-on:click="changeDirectionPrev()" class="merch__arrow">
-          <img src="../images/Vector_arrow.svg" />
+          <img src="/images/Vector_arrow.svg" />
         </div>
         <div v-on:click="changeDirectionNext()" class="merch__arrow">
-          <img src="../images/Vector_arrow-right.svg" />
+          <img src="/images/Vector_arrow-right.svg" />
         </div>
       </div>
     </div>

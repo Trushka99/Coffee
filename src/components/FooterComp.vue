@@ -12,7 +12,7 @@ function scrollTo(view: any) {
 <template>
   <div class="footer">
     <div>
-      <img class="footer__logo" src="../images/Logo-header.png" />
+      <img class="footer__logo" src="/images/Logo-header.png" />
       <p class="footer__text">Кофе с капи 2024</p>
     </div>
     <div class="footer__contacts">
@@ -31,9 +31,9 @@ function scrollTo(view: any) {
           <li class="footer__text">team@CapiCoffee.com</li>
         </ul>
         <div class="footer__icons">
-          <img class="footer__icon" src="../images/TG_icon.svg" />
-          <img class="footer__icon" src="../images/Gmail.svg" />
-          <img class="footer__icon" src="../images/VK.svg" />
+          <img class="footer__icon" src="/images/TG_icon.svg" />
+          <img class="footer__icon" src="/images/Gmail.svg" />
+          <img class="footer__icon" src="/images/VK.svg" />
         </div>
       </div>
     </div>

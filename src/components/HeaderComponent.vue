@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
   <header class="header">
     <div class="header__right">
       <RouterLink class="header__link" to="/"
-        ><img alt="Site logo" class="header__logo" src="../images/Logo-header.png"
+        ><img alt="Site logo" class="header__logo" src="/images/Logo-header.png"
       /></RouterLink>
       <nav class="header__nav">
         <ul class="header__list">

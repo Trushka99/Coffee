@@ -12,7 +12,7 @@ watchEffect(() => (data.value = basket.getBasket))
   <div class="link">
     <RouterLink to="/basket">
       <div v-if="data.length != 0" class="basket">
-        <img class="basket__image" src="../images/shopping-cart.png" />
+        <img class="basket__image" src="/images/shopping-cart.png" />
         <p class="basket__text">{{ data.length }}</p>
       </div>
     </RouterLink>

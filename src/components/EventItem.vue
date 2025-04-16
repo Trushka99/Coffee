@@ -17,7 +17,7 @@ const props = defineProps({
     <div v-if="props.child" class="event__child">
       <img
         class="event__child-icon"
-        src="../images/user-single-neutral-male--close-geometric-human-person-single-up-user-male.svg"
+        src="/images/user-single-neutral-male--close-geometric-human-person-single-up-user-male.svg"
       />
       <p class="event__child-text">Можно с детьми</p>
     </div>

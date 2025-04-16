@@ -1,6 +1,6 @@
 <template>
   <article class="background">
-    <img src="../images/Главная страница.png" class="title" />
+    <img src="/images/Главная страница.png" class="title" />
   </article>
 </template>
 
