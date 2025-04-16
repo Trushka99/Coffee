@@ -94,11 +94,14 @@ const data = [
   font-size: 64px;
   font-weight: 400;
   line-height: 87px;
+  color: rgb(44, 62, 80);
 }
 .events__paragraph {
   font-family: Lato;
   font-size: 24px;
   font-weight: 400;
+  color: rgb(44, 62, 80);
+
   line-height: 29px;
 }
 @media (max-width: 1200px) {
