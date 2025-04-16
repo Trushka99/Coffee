@@ -1,12 +1,5 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import { useBasket } from '@/stores/basket'
-import { ref } from 'vue'
-import { watchEffect } from 'vue'
-const basket = useBasket()
-const data = ref()
-
-watchEffect(() => (data.value = basket.getBasket))
 </script>
 <template>
   <header class="header">
@@ -27,47 +20,16 @@ watchEffect(() => (data.value = basket.getBasket))
         </ul>
       </nav>
     </div>
-    <div class="header__right">
-      <div v-if="data.length != 0" class="basket">
-        <RouterLink to="/basket">
-          <img class="basket__image" src="../images/shopping-cart.png" />
-          <p class="basket__text">{{ data.length }}</p>
-        </RouterLink>
-      </div>
-    </div>
   </header>
 </template>
 
 <style scoped>
-.basket {
-  background-color: rgba(221, 159, 114, 1);
-  border-radius: 20px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  padding: 5px 55px 5px 54px;
-  position: relative;
-}
 .header {
   background-color: rgba(237, 229, 216, 1);
-  align-items: center;
   padding: 8px 40px 8px 40px;
   margin: 0 auto;
 }
 
-.basket__image {
-  width: 40px;
-  height: 40px;
-}
-.basket__text {
-  position: absolute;
-  bottom: 5px;
-  right: 25px;
-  font-family: Lato;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-}
 .header__right {
   display: flex;
   align-items: center;

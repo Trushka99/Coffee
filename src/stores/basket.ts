@@ -28,9 +28,9 @@ export const useBasket = defineStore('basket', {
       this.basket.push(data)
     },
     addAddons(props: any, data: any) {
-      const item = this.basket.find((el) => el.id === props.id)
-
-      this.basket[this.basket.length - 1]?.addon?.push(data)
+      const item: any = this.basket.find((el) => el.id === props.id)
+      const index = this.basket.indexOf(item)
+      this.basket[index]?.addon?.push(data)
     },
     deleteAddons(props: any, data: any) {
       const item: any = this.basket.find((el) => el.id === props.id)
